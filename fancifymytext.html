@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
+		<script type="text/javascript" src="fancifymytext.js"></script>
 		
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 		
-
 		<!-- Your UI controls go here -->
 		
+		<!-- Field for users to enter text
+		- 4 rows, 30 columns
+		- wrapped in bordered field set box with label "Text"
+		-->
+		<fieldset>
+			<label for="txt">Text: </label>
+			<textarea id="txt" name="txt" rows="4" cols="30"></textarea>
+		</fieldset>
+		
+		<!-- Bordered field set box labeled "Fancify"
+		- contiains a button labeled "Bigger!"
+		- 2 radio buttons: "FancyShmancy" + "BoringBetty"
+		-->
+		<fieldset>
+			<button type="button" name="bigger" onclick="upSize()">Bigger!</button>
+			<input type="radio" id="fancy" name="js-style" onchange="fancyOrNot()" value="fancy">
+			<label for="fancy">FancyShmancy</label>
+			<input type="radio" id="boring" name="js-style" onchange="fancyOrNot()" value="boring" checked>
+			<label for="boring">BoringBetty</label>
+		</fieldset>
+
 	</body>
 </html>
