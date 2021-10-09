@@ -14,11 +14,10 @@ function fancyOrNot(event) {
     for (let rb of rbs) {
         if (rb.checked) {
             let selected = rb.value;
-            alert(selected);
 
-            if (selected === "fancy") {
+            if (selected == "fancy") {
                 document.getElementById("txt").style.fontWeight="bold";
-            } else if (selected === "boring") {
+            } else if (selected == "boring") {
                 document.getElementById("txt").style.fontWeight="normal";
             }
         }
