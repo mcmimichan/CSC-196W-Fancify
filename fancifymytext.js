@@ -31,15 +31,15 @@ function fancyOrNot(event) {
 rb.addEventListener('change', fancyOrNot);
 
 
-// Moo button: capitalize text and add -Moo to end of last word in sentence
+// Moo button: capitalize text and add -Moo to end of last word in sentence     
 const b2tn = document.querySelector('button[name="moo"]');
 
 function mooify(event) {
-    document.getElementById("txt").value=document.getElementById("txt").value.toUpperCase();
+    document.getElementById("txt").value = document.getElementById("txt").value.toUpperCase();
 
-    var str = document.getElementById("txt");
+    var str = document.getElementById("txt").value;
     var parts = str.split(".");
-    str = parts.join("-Moo.");
+    document.getElementById("txt").value = parts.join("-Moo.");
 }
 
 btn2.addEventListener('click', mooify);
