@@ -35,8 +35,9 @@ rb.addEventListener('change', fancyOrNot);
 const b2tn = document.querySelector('button[name="moo"]');
 
 function mooify(event) {
-    let originalText = document.getElementById("txt").value;
-    document.getElementById("txt").value=originalText.toUpperCase();
+    document.getElementById("txt").value=document.getElementById("txt").value.toUpperCase();
+
+    // add "-Moo" to ends of sentences
 }
 
 btn2.addEventListener('click', mooify);
