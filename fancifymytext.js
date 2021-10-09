@@ -35,8 +35,8 @@ rb.addEventListener('change', fancyOrNot);
 const b2tn = document.querySelector('button[name="moo"]');
 
 function mooify(event) {
-    let originalText = document.getElementById("txt").style.value;
-    document.getElementById("txt").style.value=originalText.toUpperCase();
+    let originalText = document.getElementById("txt").value;
+    document.getElementById("txt").value=originalText.toUpperCase();
 }
 
 btn2.addEventListener('click', mooify);
