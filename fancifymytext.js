@@ -29,3 +29,14 @@ function fancyOrNot(event) {
 }
 
 rb.addEventListener('change', fancyOrNot);
+
+
+// Moo button: capitalize text
+const b2tn = document.querySelector('button[name="moo"]');
+
+function mooify(event) {
+    let originalText = document.getElementById("txt").style.value;
+    document.getElementById("txt").style.value=originalText.toUpperCase();
+}
+
+btn2.addEventListener('click', mooify);
