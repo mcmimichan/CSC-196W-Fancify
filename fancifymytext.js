@@ -15,11 +15,12 @@ function fancyOrNot(event) {
         if (rb.checked) {
             let selected = rb.value;
             alert(selected);
-            /* if (selected === "fancy") {
-                document.getElementById("txt").style.fontWeight("bold");
-            } else if (selected === "") {
-                document.getElementById("txt").style.fontWeight("normal");
-            } */
+
+            if (selected === "fancy") {
+                document.getElementById("txt").style.fontWeight="bold";
+            } else if (selected === "boring") {
+                document.getElementById("txt").style.fontWeight="normal";
+            }
         }
     }
 }
